@@ -43,10 +43,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 var canvas = document.getElementById('canvas');//this code is used to create the variable canvas
 var context = canvas.getContext('2d'); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
 function createrectangle() { //start the function to make the rectangle via the button in HTML
-	context.fillRect(20,20,60,60); //these are my dimensions to make a rectangle on the canvas
+	context.fillRect(400,400,90,90); //these are my dimensions to make a rectangle on the canvas
 }
 function makename() { //this will be the function to add my name
-	context.fillText('Neel Sampangirama', 40, 20); //this is the code to fill via text my name on the canvas
+	context.fillText('Neel Sampangirama', 500, 90); //this is the code to fill via text my name on the canvas
 }
 function clearCanvas() {//this will be my function to clear the canvas
 	context.clearRect(0,0, canvas.width, canvas.height); //this is how I will clear my canvas for the person to try something new
