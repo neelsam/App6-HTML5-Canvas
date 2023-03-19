@@ -42,11 +42,14 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
 function createrectangle() { //start the function to make the rectangle via the button in HTML
 	var canvas = document.getElementById('canvas');//this code is used to create the variable canvas
-	var context = canvas.getContext('2d'); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
+	var ctx = canvas.getContext('2d'); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
 	ctx.fillStyle = "#FF0000"; //this will give us a fill style that is recommended by W3schools
 	ctx.fillRect(10, 10, 100, 50)  //these are my dimensions to make a rectangle on the canvas
 }
 function makename() { //this will be the function to add my name
+	var canvas = document.getElementById('canvas');//this code is used to create the variable canvas
+	var ctx = canvas.getContext('2d'); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
+	ctx.font = "30px Arial"; //this adds my font to the name function
 	context.fillText('Neel Sampangirama', 500, 90); //this is the code to fill via text my name on the canvas
 }
 function clearCanvas() {//this will be my function to clear the canvas
