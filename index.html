@@ -40,7 +40,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
-function createrectangle() { //start the function to make the rectangle via the button in HTML
+function makeRectangle() { //start the function to make the rectangle via the button in HTML
 	var canvas = document.getElementById("thecanvas");//this code is used to create the variable canvas
 	var ctx = canvas.getContext("2d"); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
 	ctx.fillStyle = "#FF0000"; //this will give us a fill style that is recommended by W3schools
@@ -103,7 +103,7 @@ function loadingImage () {//this will be my code to make an image of a cat appea
 	<a href="canvas"  onclick="clearCanvas();" class="w3-btn w3-black"> Clear</a>
         <a href="canvas"  onclick="makename();" class="w3-btn w3-black"> Name</a>
 	<a href="canvas"  onclick="loadingImage();" class="w3-btn w3-black"> Image</a>
-        <button onclick="createrectangle()">Create Rectangle</button>
+        <button onclick="makeRectangle();">Create Rectangle</button>
 
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
