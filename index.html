@@ -43,8 +43,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 function createrectangle() { //start the function to make the rectangle via the button in HTML
 	var canvas = document.getElementById('canvas');//this code is used to create the variable canvas
 	var context = canvas.getContext('2d'); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
-	context.fillStyle = "#FF0000"; //this will give us a fill style that is recommended by W3schools
-	context.fillRect(10, 10, 100, 50)  //these are my dimensions to make a rectangle on the canvas
+	ctx.fillStyle = "#FF0000"; //this will give us a fill style that is recommended by W3schools
+	ctx.fillRect(10, 10, 100, 50)  //these are my dimensions to make a rectangle on the canvas
 }
 function makename() { //this will be the function to add my name
 	context.fillText('Neel Sampangirama', 500, 90); //this is the code to fill via text my name on the canvas
