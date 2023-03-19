@@ -41,14 +41,14 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
 function createrectangle() { //start the function to make the rectangle via the button in HTML
-	var canvas = document.getElementById('canvas');//this code is used to create the variable canvas
-	var ctx = canvas.getContext('2d'); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
+	var canvas = document.getElementById("thecanvas");//this code is used to create the variable canvas
+	var ctx = canvas.getContext("2d"); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
 	ctx.fillStyle = "#FF0000"; //this will give us a fill style that is recommended by W3schools
-	ctx.fillRect(10, 10, 100, 50)  //these are my dimensions to make a rectangle on the canvas
+	ctx.fillRect(10, 10, 50, 50)  //these are my dimensions to make a rectangle on the canvas
 }
 function makename() { //this will be the function to add my name
-	var canvas = document.getElementById('canvas');//this code is used to create the variable canvas
-	var ctx = canvas.getContext('2d'); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
+	var canvas = document.getElementById("thecanvas");//this code is used to create the variable canvas
+	var ctx = canvas.getContext("2d"); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
 	ctx.font = "30px Arial"; //this adds my font to the name function
 	context.fillText('Neel Sampangirama', 500, 90); //this is the code to fill via text my name on the canvas
 }
@@ -98,7 +98,8 @@ function loadingImage () {//this will be my code to make an image of a cat appea
  	<!-- This is the code used to make my buttons so that the user can press my buttons and make changes to the canvas. Therefore,
 	if someone pressses the create rectangle code for example, they will be able to create a rectangle -->
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-	<canvas id="canvas" width="400" height="400" style="border:1px solid black;"></canvas> 
+	<canvas id="theCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
 	<a href="canvas"  onclick="clearCanvas();" class="w3-btn w3-black"> Clear</a>
         <a href="canvas"  onclick="makename();" class="w3-btn w3-black"> Name</a>
 	<a href="canvas"  onclick="loadingImage();" class="w3-btn w3-black"> Image</a>
