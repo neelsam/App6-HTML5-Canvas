@@ -103,12 +103,15 @@ function loadingImage () {//this will be my code to make an image of a cat appea
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	<!-- This is the code used to make my buttons so that the user can press my buttons and make changes to the canvas. Therefore,
-	if someone pressses the create rectangle code for example, they will be able to create a rectangle -->
+	if someone pressses the create rectangle code for example, they will be able to create a rectangle. I used a div to put the buttons
+ 	under the canvas.-->
 	<canvas id="thecanvas" width="600" height="400" style="border:1px solid #000000;"></canvas>
+	<div id="buttons">
 	<button onclick="clearCanvas();" class="w3-btn w3-black"> Clear Canvas</a>
         <button onclick="makename();" class="w3-btn w3-black"> Write Name</button>
         <button onclick="loadingImage();" class="w3-btn w3-black"> Load Image</button>
         <button onclick="makeRectangle();" class="w3-btn w3-black"> Create Rectangle</button>
+	</div>
 
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
