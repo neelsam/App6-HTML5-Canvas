@@ -50,13 +50,17 @@ function makename() { //this will be the function to add my name
 	var canvas = document.getElementById("thecanvas");//this code is used to create the variable canvas
 	var ctx = canvas.getContext("2d"); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
 	ctx.font = "30px Arial"; //this adds my font to the name function
-	context.fillText('Neel Sampangirama', 500, 90); //this is the code to fill via text my name on the canvas
+	ctx.fillText('Neel Sampangirama', 100, 50); //this is the code to fill via text my name on the canvas
 }
 function clearCanvas() {//this will be my function to clear the canvas
+	var canvas = document.getElementById("thecanvas");//this code is used to create the variable canvas
+	var ctx = canvas.getContext("2d"); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
 	context.clearRect(0,0, canvas.width, canvas.height); //this is how I will clear my canvas for the person to try something new
 }
 function loadingImage () {//this will be my code to make an image of a cat appear onto the canvas
-	const cat = new image(); //creates code so that my context function can actually run and draw the image
+	var canvas = document.getElementById("thecanvas");//this code is used to create the variable canvas
+	var ctx = canvas.getContext("2d"); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
+	var cat = new image(); //creates code so that my context function can actually run and draw the image
 	cat.src = 'cat.jpg'; //this is how I will find the image
 	cat.onload = function() { //this is how I will load the image	
 		context.drawImage(cat, 0, 0); //adds the image to the origin
