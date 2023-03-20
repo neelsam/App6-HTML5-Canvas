@@ -44,7 +44,7 @@ function makeRectangle() { //start the function to make the rectangle via the bu
 	var canvas = document.getElementById("thecanvas");//this code is used to create the variable canvas
 	var ctx = canvas.getContext("2d"); //I read that we needed this code to make it either 2d or webgl, so 2d since we are making a canvas
 	ctx.fillStyle = "#FF0000"; //this will give us a fill style that is recommended by W3schools
-	ctx.fillRect(10, 10, 50, 50)  //these are my dimensions to make a rectangle on the canvas
+	ctx.fillRect(10, 10, 100, 50)  //these are my dimensions to make a rectangle on the canvas
 }
 function makename() { //this will be the function to add my name
 	var canvas = document.getElementById("thecanvas");//this code is used to create the variable canvas
@@ -95,15 +95,14 @@ function loadingImage () {//this will be my code to make an image of a cat appea
 	<p>Content goes here.</p>
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	<!-- This is the code used to make my buttons so that the user can press my buttons and make changes to the canvas. Therefore,
-	if someone pressses the create rectangle code for example, they will be able to create a rectangle -->
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<!-- This is the code used to make my buttons so that the user can press my buttons and make changes to the canvas. Therefore,
+	if someone pressses the create rectangle code for example, they will be able to create a rectangle -->
 	<canvas id="thecanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
-
-	<a href="canvas"  onclick="clearCanvas();" class="w3-btn w3-black"> Clear</a>
-        <a href="canvas"  onclick="makename();" class="w3-btn w3-black"> Name</a>
-	<a href="canvas"  onclick="loadingImage();" class="w3-btn w3-black"> Image</a>
-        <button onclick="makeRectangle();">Create Rectangle</button>
+	<button onclick="clearCanvas();" class="w3-btn w3-black"> Clear Canvas</a>
+        <button onclick="makename();" class="w3-btn w3-black"> Write Name</button>
+        <button onclick="loadingImage();" class="w3-btn w3-black"> Load Image</button>
+        <button onclick="makeRectangle();" class="w3-btn w3-black"> Create Rectangle</button>
 
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
